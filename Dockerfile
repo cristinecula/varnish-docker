@@ -19,7 +19,7 @@ ENV \
 EXPOSE 80
 
 # Expose volumes to be able to use data containers
-VOLUMES ["/var/lib/varnish", "/etc/varnish"]
+VOLUME ["/var/lib/varnish", "/etc/varnish"]
 
 # Make our custom VCLs available on the container
 ADD default.vcl /etc/varnish/default.vcl
